@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="30dp"
+    android:layout_marginLeft="30dp"
+    android:paddingBottom="10dp"
+    android:orientation="horizontal"
+    android:background="@drawable/shape_background"
+    >
+
+    <TextView
+        android:id="@+id/studNameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Name"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/background"
+        android:gravity="center_horizontal"
+        />
+
+    <TextView
+        android:id="@+id/reason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/studNameText"
+        android:text="Reason:"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+    <TextView
+        android:id="@+id/reasonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/studNameText"
+        android:layout_toRightOf="@+id/reason"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+    <TextView
+        android:id="@+id/place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/reason"
+        android:text="Place:"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+    <TextView
+        android:id="@+id/placeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/reasonText"
+        android:layout_toRightOf="@+id/place"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+    <TextView
+        android:id="@+id/leave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/place"
+        android:text="Date of leaving:"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+    <TextView
+        android:id="@+id/leaveText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/placeText"
+        android:layout_toRightOf="@+id/leave"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+    <TextView
+        android:id="@+id/leaveTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/leave"
+        android:text="Time of leaving:"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+    <TextView
+        android:id="@+id/leaveTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/leaveText"
+        android:layout_toRightOf="@+id/leaveTime"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+    <TextView
+        android:id="@+id/rtrn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/leaveTime"
+        android:textStyle="bold"
+        android:text="Date of return:"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+    <TextView
+        android:id="@+id/rtrnText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/leaveTimeText"
+        android:layout_toRightOf="@+id/rtrn"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+    <TextView
+        android:id="@+id/rtrnTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/rtrn"
+        android:textStyle="bold"
+        android:text="Time of return:"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+    <TextView
+        android:id="@+id/rtrnTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/rtrnText"
+        android:layout_toRightOf="@+id/rtrnTime"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+    <TextView
+        android:id="@+id/parentApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/rtrnTime"
+        android:textStyle="bold"
+        android:text="Parent:"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+    <TextView
+        android:id="@+id/parentAppText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/rtrnTimeText"
+        android:layout_toRightOf="@+id/parentApp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/not_approved"
+        />
+
+    <TextView
+        android:id="@+id/adminApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/parentApp"
+        android:text="Warden:"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+    <TextView
+        android:id="@+id/adminAppText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/parentAppText"
+        android:layout_toRightOf="@+id/adminApp"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="@color/not_approved"
+        />
+
+
+</RelativeLayout>

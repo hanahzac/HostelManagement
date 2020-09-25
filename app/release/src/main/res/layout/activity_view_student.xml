@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewStudent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/background"
+            >
+
+            <TextView
+                android:id="@+id/studentBanner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimaryDark"
+                android:text="Student Details"
+                android:textSize="24sp"
+                android:textAlignment="center"
+                android:textColor="@color/background"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:id="@+id/nameText"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorAccent"
+                android:layout_below="@+id/studentBanner"
+                android:text="Full Name:"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_below="@+id/studentBanner"
+                android:layout_toRightOf="@id/nameText"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"
+                />
+
+            <TextView
+                android:id="@+id/branchText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorAccent"
+                android:layout_below="@+id/nameText"
+                android:text="Branch:"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/branch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/nameText"
+                android:layout_toRightOf="@+id/branchText"
+                android:layout_gravity="center_vertical"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"
+                />
+
+            <TextView
+                android:id="@+id/idnoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/branchText"
+                android:textColor="@color/colorAccent"
+                android:text="College ID:"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/idno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/branchText"
+                android:layout_toRightOf="@id/idnoText"
+                android:layout_gravity="center_vertical"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"
+                />
+
+            <TextView
+                android:id="@+id/yearText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorAccent"
+                android:layout_below="@+id/idnoText"
+                android:text="Year of joining hostel:"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/idnoText"
+                android:layout_toRightOf="@id/yearText"
+                android:layout_gravity="center_vertical"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"
+                />
+
+            <TextView
+                android:id="@+id/dobText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/yearText"
+                android:textColor="@color/colorAccent"
+                android:text="Date of birth:"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/dob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/yearText"
+                android:layout_toRightOf="@+id/dobText"
+                android:layout_gravity="center_vertical"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"
+                />
+
+            <TextView
+                android:id="@+id/genderText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/dobText"
+                android:textColor="@color/colorAccent"
+                android:text="Gender:"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/dobText"
+                android:layout_toRightOf="@id/genderText"
+                android:layout_gravity="center_vertical"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"
+                />
+
+            <TextView
+                android:id="@+id/cnoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorAccent"
+                android:layout_below="@id/genderText"
+                android:text="Contact number:"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/cno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/genderText"
+                android:layout_toRightOf="@+id/cnoText"
+                android:layout_gravity="center_vertical"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"
+                />
+
+            <TextView
+                android:id="@+id/emailText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/cnoText"
+                android:textColor="@color/colorAccent"
+                android:text="E-mail ID:"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/cnoText"
+                android:layout_toRightOf="@+id/emailText"
+                android:layout_gravity="center_vertical"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"
+                />
+
+            <TextView
+                android:id="@+id/parentBanner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/emailText"
+                android:background="@color/colorPrimaryDark"
+                android:text="Parent's Details"
+                android:textSize="24sp"
+                android:textAlignment="center"
+                android:textColor="@color/background"
+                android:gravity="center_horizontal"
+                />
+
+            <TextView
+                android:id="@+id/fathernameText"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorAccent"
+                android:layout_below="@id/parentBanner"
+                android:text="Father's Name:"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/fathername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/parentBanner"
+                android:layout_toRightOf="@+id/fathernameText"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"
+                />
+
+            <TextView
+                android:id="@+id/fcnoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/fathernameText"
+                android:textColor="@color/colorAccent"
+                android:text="Father's contact number:"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/fcno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fcnoText"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/colorPrimaryDark"
+                />
+
+            <TextView
+                android:id="@+id/mothernameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fcno"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorAccent"
+                android:text="Mother's Name:"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/mothername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fcno"
+                android:layout_toRightOf="@+id/mothernameText"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"
+                />
+
+            <TextView
+                android:id="@+id/mcnoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/colorAccent"
+                android:layout_below="@+id/mothernameText"
+                android:text="Mother's contact number:"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/mcno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mcnoText"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"
+                />
+
+            <TextView
+                android:id="@+id/paremailText"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mcno"
+                android:textColor="@color/colorAccent"
+                android:text="Parent's e-mail ID:"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/paremail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/paremailText"
+                android:layout_gravity="center_vertical"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"
+                />
+
+            <TextView
+                android:id="@+id/addressText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/paremail"
+                android:textColor="@color/colorAccent"
+                android:text="Address:"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/paremail"
+                android:layout_toRightOf="@+id/addressText"
+                android:layout_gravity="center_vertical"
+                android:textSize="20sp"
+                android:inputType="textMultiLine"
+                android:textColor="@color/colorPrimaryDark"
+                />
+
+
+            <Button
+                android:id="@+id/permissionsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addressText"
+                android:padding="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"
+                android:text="View permissions"
+                android:textColor="@color/background"
+                android:background="@drawable/rounded_button"
+                />
+
+            <Button
+                android:id="@+id/logButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addressText"
+                android:layout_toEndOf="@+id/permissionsButton"
+                android:padding="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="View In-out logs"
+                android:textColor="@color/background"
+                android:background="@drawable/rounded_button"
+                android:layout_toRightOf="@+id/permissionsButton" />
+
+            <Button
+                android:id="@+id/editButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logButton"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Edit student details"
+                android:textColor="@color/background"
+                android:background="@drawable/rounded_button"
+                />
+
+            <Button
+                android:id="@+id/deleteButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editButton"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="50dp"
+                android:text="Remove Student"
+                android:textColor="@color/background"
+                android:background="@drawable/rounded_button"
+                />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
